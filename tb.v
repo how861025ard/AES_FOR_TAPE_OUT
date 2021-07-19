@@ -30,7 +30,7 @@ module tb;
 
 
 	initial clk = 1'b0;
-	always begin #(`CLK_period/2) clk = ~clk; end
+	always begin #(`CLK_period/2.0) clk = ~clk; end
 	
 	initial begin
 		#0 reset = 1'b0;
